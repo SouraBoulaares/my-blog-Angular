@@ -1,13 +1,17 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { ArticlesComponent } from './src/app/articles/articles.component';
 
+import { ArticlesRoutingModule } from './articles-routing.module';
+import { ArticlesComponent } from './articles.component';
 
 
 @NgModule({
-  declarations: [ArticlesComponent],
+  declarations: [
+    ArticlesComponent
+  ],
   imports: [
-    CommonModule
+    CommonModule,
+    ArticlesRoutingModule
   ]
 })
 export class ArticlesModule { }
